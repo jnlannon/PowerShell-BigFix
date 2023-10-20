@@ -1,4 +1,3 @@
-# BesParamed2ATA.ps1
 # Used to reboot Hyper-Vs and not intended for VMs
 # Yes there is manually, look at the GMD example <Target><ComputerName> in the <SingleAction> section
 # Corrected Outfile path ln 22
@@ -150,6 +149,7 @@ Out-File -FilePath $outfile -append -InputObject "	</SingleAction>"
 Out-File -FilePath $outfile -append -InputObject "</BES>"
 
 start $outfile
+#Examples (using old filename)
 # .\BESRestartParamsChangeA.ps1 -DateTime "01/10/2020 19:00"
 # .\BESRestartParamsChangeA.ps1 -DateTime "01/10/2020 20:00"
 # .\BESRestartParamsChangeA.ps1 -DateTime "01/10/2020 20:30"
